@@ -20,6 +20,22 @@
   <a href="contact.html">Contact</a>
 </nav>
 
+<div style="text-align:center; margin:10px;">
+  <button onclick="showTamil()">தமிழ்</button>
+  <button onclick="showEnglish()">English</button>
+</div>
+
+<section id="tamil">
+  <h2>வரவேற்பு</h2>
+  <p>சிறுதானூர் ஒரு அமைதியான கிராமம்.</p>
+</section>
+
+<section id="english" style="display:none;">
+  <h2>Welcome</h2>
+  <p>Siruthanur is a peaceful village.</p>
+</section>
+
+
 <section>
   <h2>Welcome | வரவேற்பு</h2>
   <p>
@@ -31,6 +47,17 @@
 <footer>
   <p>© 2025 Siruthanur Village</p>
 </footer>
+
+<script>
+function showTamil() {
+  document.getElementById("tamil").style.display = "block";
+  document.getElementById("english").style.display = "none";
+}
+function showEnglish() {
+  document.getElementById("english").style.display = "block";
+  document.getElementById("tamil").style.display = "none";
+}
+</script>
 
 </body>
 </html>
